@@ -1,0 +1,15 @@
+.sweet  {
+  width:auto;
+  height:auto
+}
+div {
+  display: flex;
+}
+
+input {
+  flex-grow: 0;
+  width: 100%;
+}
+button {
+  padding: 0 0em;
+}

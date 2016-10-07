@@ -1,0 +1,47 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+
+
+<head>
+  <link href="style.css" rel="stylesheet">
+  <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+  <script src="popup.js">
+  </script>
+</head>
+<body style="background-color:white;">
+  <div class="sweet">
+  </div>
+<img src="websites.jpg" style="width:164px;height:108px;">
+<h1 style="font-size:115%; color:darkblue"><b> Choose your website:</b></br></h1>
+
+<div>
+<input type="text"  placeholder="http://www.google.com/" id="text" size="18" /><b>
+  <div style= "text-align:center">
+  </div>
+  <button id="submit"style="height:20px;width:70px;color:darkblue"> Add</button>
+  </div>
+
+    <div>
+  <input type="number" id="time" placeholder="Min" style="width: 36px;" min="1"/> </b>
+    <button id="btn-time" style="color:darkblue;height:20px;width:30px" >Set</button>
+</div>
+<div class="website">
+<b>
+<div id="chosen" style="font-size:95%; color:darkblue">
+</div>
+  <b>
+  <div id="elapsed"></div><br>
+
+</body>
+
+</html>
